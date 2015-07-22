@@ -575,10 +575,10 @@ Sticky Portfolio Info
 ----------------------------------------------------*/
 
 $(window).load(function() {
-  scrollOffset = $('#sticky-box').offset().top - $('#header').height();
-  initPortfolioStickyInfo();
-  $(window).scroll(initPortfolioStickyInfo);
-  $(window).resize(initPortfolioStickyInfo);
+  //scrollOffset = $('#sticky-box').offset().top - $('#header').height();
+  //initPortfolioStickyInfo();
+  //$(window).scroll(initPortfolioStickyInfo);
+  //$(window).resize(initPortfolioStickyInfo);
 });
 
 function initPortfolioStickyInfo() {
