@@ -1,0 +1,37 @@
+
+block portfolio
+
+    div#portfolio.separator80
+
+    section.portfolio
+        div.container
+            h2.portfolio-title.center Portfolio
+            p.lead.center In the below projects I had opportunity to participate in their development. In different projects I was working as Software Engineer, Scrum Master or Co-Founder. <br/> The below trademarks belongs to their owners and their presentation is only for information reason.
+                div.filters
+                    ul
+                        li <a href="#" class="selected" data-filter="*">all</a>
+                        li <a href="#" data-filter=".entertainment">entertainment</a>
+                        li <a href="#" data-filter=".marketing">marketing</a>
+                        li <a href="#" data-filter=".ecommerce">e-commerce</a>
+                        li <a href="#" data-filter=".gaming">gaming</a>
+                        li <a href="#" data-filter=".myprojects">my projects</a>
+                div.items
+                    - var projects = _.chain(contents['project']._.pages).sortBy(function(item) {
+                    -       return item.metadata['date'];
+                    - }).reverse().value()
+                    each p in projects
+                        div.item.hover-effect.item-w1.item-h1.item-p4(class!=p.metadata.category)
+                            a(href!=p.metadata.url, target='_blank')
+                                img(src!=p.metadata.image)
+                                div.mask
+                                    h2!=p.title
+                                    div.subtitle!=p.metadata.role
+
+                //div.more
+                //    a(href='#')
+                //        i.fs3(aria-hidden='true' data-icon!='&#xe050;')
+
+
+
+
+

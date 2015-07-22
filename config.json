@@ -1,0 +1,23 @@
+{
+    "locals": {
+        "url": "http://localhost:8080",
+        "name": "SoftwareLondon - Seweryn Bidolach",
+        "owner": "Seweryn Bidolach",
+        "description": ""
+    },
+    "plugins": [
+
+    ],
+    "require": {
+        "moment": "moment",
+        "_": "underscore",
+        "typogr": "typogr"
+    },
+    "jade": {
+        "pretty": true
+    },
+    "markdown": {
+        "smartLists": true,
+        "smartypants": true
+    }
+}

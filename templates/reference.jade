@@ -1,0 +1,17 @@
+
+block reference
+    div#reference.separator80
+
+    section.reference
+        h2.title-box References
+        div.portfolio-cl-full
+            - var references = _.chain(contents['reference']._.pages).sortBy(function(item) {
+            -       return item.metadata['date'];
+            - }).reverse().value()
+            each r in references
+                div.item.hover-effect
+                    a(href!=r.metadata.url, target='_blank')
+                        img(src!=r.metadata.image)
+                        div.mask
+                            h2!=r.title
+                            div.subtitle!=r.metadata.type

@@ -1,0 +1,115 @@
+doctype html
+block vars
+    - bodyclass = null;
+html(lang='en')
+  head
+    block head
+      meta(charset='utf-8')
+      meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+      meta(name='viewport', content='width=device-width, initial-scale=1')
+      title
+        block title
+          = locals.name
+      link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
+      link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300')
+      link(rel='stylesheet', href=contents.css['reset.css'].url)
+      link(rel='stylesheet', href=contents.css['bootstrap.css'].url)
+      link(rel='stylesheet', href=contents.css['style.css'].url)
+      link(rel='stylesheet', href=contents.css['color.css'].url)
+      link(rel='stylesheet', href=contents.css['eleganticons.css'].url)
+      link(rel='stylesheet', href=contents.css['flexslider.css'].url)
+      link(rel='stylesheet', href=contents.css['owl.carousel.css'].url)
+      link(rel='stylesheet', href=contents.css['owl.transitions.css'].url)
+      link(rel='stylesheet', href=contents.css['YTPlayer.css'].url)
+      link(rel='stylesheet', href=contents.css['animate.min.css'].url)
+      link(rel='stylesheet', href=contents.css['magnific-popup.css'].url)
+
+      <!--[if lt IE 9]>
+      script(src=contents.js['html5shiv.js'].url)
+      <![endif]-->
+
+  body(data-spy='scroll' data-target='.navbar')
+    div#pageloader
+      div.loader
+        img(src=contents.images['load.gif'].url, alt=loader)
+
+    section#main
+
+    //- Navigation Section
+    nav#header.navbar.navbar-default.navbar-static-top(role='navigation')
+      div.container
+        //- Brand and toggle get grouped for better mobile display
+        div.navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          div.logo
+            a(href='#main') Software<em>London</em>.net
+
+        // Collect the nav links, forms, and other content for toggling
+        div.collapse.navbar-collapse#bs-example-navbar-collapse-1
+          ul.nav.navbar-nav.navbar-right
+            li.active
+              a(class='scroll', href='#main') Welcome
+            li
+              a(class='scroll', href='#about') About me
+            li
+              a(class='scroll', href='#reference') References
+            li
+              a(class='scroll', href='#offer') Offer
+            li
+              a(class='scroll', href='#portfolio') Portfolio
+            //li
+            //  a(class='scroll', href='#blog') Blog
+            li
+              a(class='scroll', href='#contact') Contact
+
+    section.wrapper
+        block content
+
+    // Footer
+    footer.footer-wrapper
+      div.footer-logo
+      div.footer-copyright
+        p Copyright &copy; 2015. Powered by&nbsp;
+          a(href='http://www.softwarelondon.net') www.SoftwareLondon.net.
+          All Rights Reserved.
+      div.footer-social
+        a(href='https://uk.linkedin.com/pub/seweryn-bidolach/11/519/583')
+          i.fs2(aria-hidden='true', data-icon!='&#xe0cb;')
+        a(href='https://www.facebook.com/seweryn.bidolach')
+          i.fs2(aria-hidden='true', data-icon!='&#xe0c1;')
+        //a(href='')
+        //  i.fs2(aria-hidden='true', data-icon!='&#xe0c3;')
+        //a(href='#')
+        //  i.fs2(aria-hidden='true', data-icon!='&#xe0c4;')
+        a(href='https://instagram.com/seweryn.b/')
+          i.fs2(aria-hidden='true', data-icon!='&#xe0c8;')
+
+    //- Back To Top
+    a.back-to-top(href='#')
+
+    //- jQuery (necessary for Bootstrap's JavaScript plugins)
+    script(src=contents.js['jquery-1.11.0.min.js'].url)
+    //- Include all compiled plugins (below), or include individual files as needed
+    script(src=contents.js['bootstrap.min.js'].url)
+    script(src=contents.js['jquery.flexslider.js'].url)
+    script(src=contents.js['jquery.superslides.js'].url)
+    script(src=contents.js['jquery.parallax-1.1.3.js'].url)
+    script(src=contents.js['bootstrap-hover-dropdown.js'].url)
+    script(src=contents.js['jquery.isotope.js'].url)
+    script(src=contents.js['owl.carousel.js'].url)
+    script(src=contents.js['jquery.mb.YTPlayer.js'].url)
+    script(src=contents.js['jquery.counterup.min.js'].url)
+    script(src=contents.js['waypoints.min.js'].url)
+    script(src=contents.js['waypoints-sticky.min.js'].url)
+    script(src=contents.js['jquery.lazyload.min.js'].url)
+    script(src=contents.js['jquery.fitvids.js'].url)
+    script(src=contents.js['jquery.magnific-popup.js'].url)
+    script(src=contents.js['plugins.js'].url)
+    script(src=contents.js['jquery.easing.min.js'].url)
+    script(src=contents.js['scrolling-nav.js'].url)
+    script(src=contents.js['contact_me.js'].url)
+    script(src=contents.js['jqBootstrapValidation.js'].url)

@@ -1,0 +1,42 @@
+
+block about
+
+    div#about.separator80
+
+    section.wrapper
+        div.container
+            h2.portfolio-title.center(style='margin-bottom: 0px') About me
+
+    section.wrapper
+        div.container.inner10
+           div.row
+                div.col-md-6.inner40
+                    img(src=contents.images['seweryn.png'].url, style='width: 100%; padding-bottom: 20px')
+                    !=contents['about.md'].html
+                div.col-md-6.inner40
+                    div#skills
+                        h3.title-section My skills
+                        !=contents['skills.md'].html
+                    div.separator10
+                    div.progress-items
+                        p Backend <span>- 9/10</span>
+                        div.progress.progress-striped.active
+                            div.progress-bar(role='progressbar' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100' style='width: 90%')
+                        p Frontend <span>- 5/10</span>
+                        div.progress.progress-striped.active
+                            div.progress-bar(role='progressbar' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100' style='width: 50%')
+                        p Database <span>- 6/10</span>
+                        div.progress.progress-striped.active
+                            div.progress-bar(role='progressbar' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100' style='width: 60%')
+                        p Design <span>- 6/10</span>
+                        div.progress.progress-striped.active
+                            div.progress-bar(role='progressbar' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100' style='width: 60%')
+                        p Agile <span>- 9/10</span>
+                        div.progress.progress-striped.active
+                            div.progress-bar(role='progressbar' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100' style='width: 90%')
+                        p Management <span>- 7/10</span>
+                        div.progress.progress-striped.active
+                            div.progress-bar(role='progressbar' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100' style='width: 70%')
+                    div.separator30
+                    a.button-main.button-main-black(href=contents.doc['Seweryn_Bidolach_CV.pdf'].url, style='margin-right: 20px', target='_blank') Download Resume
+                    a.button-main.button-main-black(href='https://github.com/sbidolach', target='_blank') Fork on Github

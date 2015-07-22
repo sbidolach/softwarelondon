@@ -1,0 +1,60 @@
+extends layout
+
+block content
+
+    //- Parallax section
+    section.parallax-image-3#welcome
+        div.parallax-image-text-one
+            div.video-image-pattern
+            div.container.inner60
+                div.row
+                    div.col-md-6.inner80(style='text-align:left; font-size: 17px')
+                        !=page.html
+                    div.col-md-6.welcome.inner40
+                        img(src=contents.images.logos['java.png'].url, style='width:130px')
+                        img(src=contents.images.logos['android.png'].url, style='width:130px')
+                        img(src=contents.images.logos['nodejs.png'].url, style='width:130px')
+                        img(src=contents.images.logos['html5.png'].url, style='width:130px')
+                        img(src=contents.images.logos['spring.png'].url, style='width:130px')
+                        img(src=contents.images.logos['hibernate.png'].url, style='width:130px')
+                        img(src=contents.images.logos['mybatis.png'].url, style='width:130px')
+                        img(src=contents.images.logos['openbd.png'].url, style='width:130px')
+                        img(src=contents.images.logos['magnolia.png'].url, style='width:130px')
+                        img(src=contents.images.logos['opencms.png'].url, style='width:130px')
+                        img(src=contents.images.logos['oracle.png'].url, style='width:130px')
+                        img(src=contents.images.logos['mysql.png'].url, style='width:130px')
+                        //a.button-main(href='#') Buy This Theme
+
+    include about
+    include reference
+    include offer
+    include portfolio
+
+    div#contact.separator80
+
+    section.wrapper
+        div.container
+            h2.portfolio-title.center(style='margin-bottom: 0px') Contact
+
+    section.wrapper
+        div.container.inner40
+            div.row
+                div.col-md-8.inner40.contact-form
+                    h3.title2 Contact form
+                    form#postComment(method='post', action='#', role='form')
+                        div.form-group.control-group.controls
+                            input.form-control#name(type='text', placeholder='Full Name', data-validation-required-message='Please enter your name', required)
+                            p.help-block
+                        div.form-group.control-group.controls
+                            input.form-control#email(type='email', placeholder='Email', data-validation-required-message='Please enter your email', required)
+                            p.help-block
+                        div.form-group.control-group.controls
+                            textarea.form-control#message(rows='10', placeholder='Message', data-validation-required-message='Please enter your message', minlength="5", data-validation-minlength-message='Min 5 characters', maxlength='999', required)
+                            p.help-block
+                        div#success
+                        button.btn.btn-primary.pull-left(type="submit") Send
+
+                div.col-md-4.inner40
+                    h3.title2 Contact Details
+                    p!=contents['contact.md'].html
+                    address!=contents['address.md'].html
