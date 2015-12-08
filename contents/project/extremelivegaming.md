@@ -5,7 +5,7 @@ date: 2015-02-24 15:00
 view: none
 image: images/project/xlg.jpg
 role: Senior Java Developer
-category: entertainment gaming
+category: entertainment
 url: http://extremelivegaming.com/
 ---
 
