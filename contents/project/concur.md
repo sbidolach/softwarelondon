@@ -1,5 +1,5 @@
 ---
-title: Expenses Management
+title: Expense Management
 author: Seweryn Bidolach
 date: 2015-09-28 15:00
 view: none
