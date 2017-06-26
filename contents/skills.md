@@ -2,35 +2,37 @@
 view: none
 ---
 
-Frameworks and Technologies which i'm using:
+Frameworks and Technologies which I'm using:
 
-* [Spring Framework][1]
-* [Hibernate ORM][2]
-* [MyBatis data mapper][3]
-* [Jackson data-processing tools][4]
-* [Jersey RESTful Web Services][5]
-* [Apache CXF services framework][6]
-* [Swagger Framework for API][7]
-* [Eclipse RCP][8]
-* [Android Developer][8]
+* [React][1]
+* [Redux][2]
+* [Yarn][3]
+* [Electron Software Framework][9]
+* [Spring Framework][4]
+* [Spring Boot][5]
+* [Swagger Framework for API][6]
+* [Hibernate ORM][7]
+* [MyBatis data mapper][8]
+
 
 <p>&nbsp;</p>
 
 
-* [Node.js runtime environment for server-side][9]
-* [Superheroic JavaScript MVW Framework][10]
-* [Node template engine][11]
+* [Node.js runtime environment for server-side][10]
+* [Superheroic JavaScript MVW Framework][11]
+* [Node template engine][12]
 
 
-[1]: https://spring.io/
-[2]: http://hibernate.org/
-[3]: https://mybatis.github.io/mybatis-3/
-[4]: https://github.com/FasterXML/jackson
-[5]: https://jersey.java.net/
-[6]: http://cxf.apache.org/
-[7]: http://swagger.io/
-[8]: https://wiki.eclipse.org/index.php/Rich_Client_Platform
-[9]: http://developer.android.com/
+[1]: https://facebook.github.io/react
+[2]: http://redux.js.org
+[3]: https://yarnpkg.com
+[4]: https://spring.io/
+[5]: https://projects.spring.io/spring-boot/
+[6]: http://swagger.io/
+[7]: http://hibernate.org/
+[8]: https://mybatis.github.io/mybatis-3/
+[9]: https://electron.atom.io/
+
 
 [10]: https://nodejs.org/
 [11]: https://angularjs.org/
