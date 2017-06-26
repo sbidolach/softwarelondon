@@ -4,10 +4,8 @@ template: index.jade
 ---
 
 <h3 class="title white">Seweryn Bidolach</h3>
-<h4 class="lead" style="color: #eee">Agile &amp; Software Developer based in London</h4>
+<h4 class="lead" style="color: #eee">Scrum Master &amp; Software Architect  based in London
 
-<b>Welcome</b> on my website. I'm Software Developer with very well knowledge of Agile methodologies based in London.
-My contact with software was from very young years. The first program which i wrote was the Quiz in DOS system. 
-I used then the first version of Norton Commander as text user interface. 
-After this experience, my IT skills improved from one year to another.
-
+<b>Welcome</b> on my website. I'm Software Developer/Architect with very well knowledge of agile methodologies and with entrepreneurial skills, based in London.
+My contact with IT and software was from very young years. I wrote then my first quiz, which was fully implemented in batch files on DOS.
+I used then Norton Commander as text user interface. That experience and history which I had from my youth helped me to do different experiments and helped to build awareness, how to find a solution to very complex problems.
