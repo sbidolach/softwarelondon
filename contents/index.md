@@ -4,7 +4,7 @@ template: index.jade
 ---
 
 <h3 class="title white">Seweryn Bidolach</h3>
-<h4 class="lead" style="color: #eee">Scrum Master &amp; Software Architect  based in London
+<h4 class="lead" style="color: #eee">Scrum Master &amp; Software Architect  based in London</h4>
 
 <b>Welcome</b> on my website. I'm Software Developer/Architect with very well knowledge of agile methodologies and with entrepreneurial skills, based in London.
 My contact with IT and software was from very young years. I wrote then my first quiz, which was fully implemented in batch files on DOS.
