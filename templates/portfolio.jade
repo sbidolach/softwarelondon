@@ -10,10 +10,10 @@ block portfolio
                 div.filters
                     ul
                         li <a href="#" class="selected" data-filter="*">all</a>
+                        li <a href="#" data-filter=".finance">finance</a>
                         li <a href="#" data-filter=".entertainment">entertainment</a>
                         li <a href="#" data-filter=".marketing">marketing</a>
                         li <a href="#" data-filter=".ecommerce">e-commerce</a>
-                        li <a href="#" data-filter=".business">business</a>
                         li <a href="#" data-filter=".myprojects">my projects</a>
                 div.items
                     - var projects = _.chain(contents['project']._.pages).sortBy(function(item) {
